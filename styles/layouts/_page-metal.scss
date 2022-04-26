@@ -1,0 +1,149 @@
+@import '../base/variables';
+@import '../base/mixins';
+
+
+
+
+
+.metal {
+    font-family: 'Exo 2', sans-serif;
+    background-color: #ffffff;
+    .container{
+        margin: 0px auto;
+    }
+    
+    &__flex-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__slider-wrapper {
+        max-width: 800px;
+        width: 100%;
+        height: 490px;
+        position: relative;
+        margin-top: 50px;
+        box-shadow: 10px 10px 44px -10px rgba(0,0,0,0.75);
+        background-image: url(/Image/Зима.jpg);
+    }
+
+   #btn-prev, #btn-next{
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 50px;
+        background-color: grey;
+        opacity: 0.4;
+        cursor: pointer;
+        transition: opacity .2s ease-in-out;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    #btn-prev, 
+    #btn-next{
+        opacity: 0.6;
+    }
+     &__tringle-left > img{
+      width: 50px;
+      height: 50px;
+    }
+    &__tringle-right > img{
+        width: 50px;
+        height: 50px;
+    }
+
+    #btn-next{
+        left: auto;
+        right: 0;
+    }
+    .slide{
+        width: 100%;
+        height: 100%;
+        display: none;
+        background-image: url(/Image/зима.jpg);
+    }
+ 
+    .slide.active {
+        display: block;
+    }
+    .slide img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position:center;
+    }
+
+    &__dots-wrapper {
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+        margin-bottom: 30px;
+    }
+
+    .dot.active{
+        background-color: black;
+    }
+    &__dots-wrapper span{
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: grey;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+    &__dots-wrapper span:last-child{
+        margin-right: 0;
+    }
+
+    @media (max-width:$media-md) {
+        .container{
+            margin: 0px auto;
+        }
+        &__category-title {
+            height: 100px;
+            font-size: 12px;
+            padding-bottom: 8px;
+        }
+
+        &__slider-wrapper {
+            max-width: 500px;
+            width: 100%;
+            height: 400px;
+            position: relative;
+            box-shadow: 10px 10px 44px -10px rgba(0,0,0,0.75);
+            background-image: url(/Image/Зима.jpg);
+            margin-top: 30px;
+        }
+        &__dots-wrapper{
+            margin-bottom: 30px;
+        }
+    }
+    @media (max-width:$media-sm) {
+        .container{
+            margin: 0px auto;
+        }
+        &__category-title {
+            height: 90px;
+            font-size: 10px;
+            padding-bottom: 8px;
+        }
+
+        &__slider-wrapper {
+            max-width: 350px;
+            width: 100%;
+            height: 350px;
+            position: relative;
+            box-shadow: 10px 10px 44px -10px rgba(0,0,0,0.75);
+            background-image: url(/Image/Зима.jpg);
+            margin-top: 30px;
+        }
+       
+    }
+
+
+
+}

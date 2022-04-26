@@ -1,0 +1,276 @@
+@import '../base/variables';
+@import '../base/mixins';
+
+
+
+.gucul-if {
+    font-family: 'Exo 2', sans-serif;
+    background-color: rgb(228, 222, 222);
+
+
+    &__body {
+        width: 100%;
+        margin: 40px 0px 60px 0px;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__say-up {
+        display: none;
+    }
+
+    &__image img {
+        width: 400px;
+        box-shadow: 10px 10px 44px -10px $secondary;
+    }
+
+    &__right {
+        display: flex;
+    }
+
+    &__circle1 {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        margin: 160px 0px 0px 40px;
+        background-color: rgb(197, 37, 37);
+
+    }
+
+    &__circle2 {
+        width: 50px;
+        height: 40px;
+        border-radius: 50%;
+        margin: 120px 0px 0px 40px;
+        background-color: rgb(197, 37, 37);
+
+    }
+
+    &__say {
+        width: 400px;
+        height: 200px;
+        font-size: 20px;
+        margin: 0px 0px 0px 40px;
+        border-radius: 50%;
+        background-color: rgb(197, 37, 37);
+        color: white;
+        box-shadow: 10px 10px 44px -10px $secondary;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+        overflow: hidden;
+    }
+
+    @media (max-width: $media-lg) {
+
+        &__body {
+            margin: 50px 0px 70px 0px;
+        }
+
+        &__image img {
+            width: 300px;
+            margin-top: 0px;
+
+        }
+
+        &__circle1 {
+            width: 20px;
+            height: 20px;
+            margin: 140px 0px 0px 10px;
+
+        }
+
+        &__circle2 {
+            width: 50px;
+            height: 40px;
+            margin: 100px 0px 0px 10px;
+
+        }
+
+        &__say {
+            width: 350px;
+            height: 175px;
+            font-size: 18px;
+            margin: 0px 0px 0px 10px;
+            padding: 30px;
+        }
+    }
+
+    @media (max-width: $media-lm) {
+        &__body {
+            margin: 40px 0px 50px 0px;
+        }
+        &__image img {
+            width: 300px;
+            margin-top: 30px;
+
+        }
+
+        &__circle1 {
+            width: 10px;
+            height: 10px;
+            margin: 150px 0px 0px 10px;
+
+        }
+
+        &__circle2 {
+            width: 30px;
+            height: 25px;
+            margin: 120px 0px 0px 10px;
+
+        }
+
+        &__say {
+            width: 300px;
+            height: 150px;
+            font-size: 16px;
+            margin: 0px 0px 0px 10px;
+            padding: 30px;
+        }
+    }
+
+    @media (max-width: $media-md) {
+        &__body {
+            margin: 80px 0px 105px 0px;
+        }
+
+        &__image img {
+            width: 300px;
+            margin-top: 30px;
+
+        }
+
+        &__circle1 {
+            width: 10px;
+            height: 10px;
+            margin: 150px 0px 0px 10px;
+
+        }
+
+        &__circle2 {
+            width: 30px;
+            height: 25px;
+            margin: 120px 0px 0px 5px;
+
+        }
+
+        &__say {
+            width: 280px;
+            height: 150px;
+            font-size: 16px;
+            margin: 0px 0px 0px 0px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+    }
+
+    @media (max-width: $media-ms) {
+
+        &__body {
+            width: 100%;
+            margin: 30px 0px 50px 0px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        &__right {
+            display: none;
+        }
+
+        &__say-up {
+            display: block;
+        }
+
+        &__image img {
+            width: 300px;
+            margin-top: 10px;
+
+        }
+
+        &__circle1 {
+            width: 10px;
+            height: 10px;
+            margin: 10px 0px 10px 170px;
+
+        }
+
+        &__circle2 {
+            width: 30px;
+            height: 25px;
+            margin: 10px 0px 0px 140px;
+
+        }
+
+        &__say {
+            width: 280px;
+            height: 150px;
+            font-size: 16px;
+            margin: 0px 0px 0px 70px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+        }
+    }
+
+    @media (max-width: $media-sm) {
+
+        &__body {
+            width: 100%;
+            margin: 30px 0px 40px 0px;
+        }
+
+        &__image img {
+            width: 250px;
+            margin-top: 0px;
+
+        }
+
+        &__circle1 {
+            width: 10px;
+            height: 10px;
+            margin: 10px 0px 10px 160px;
+
+        }
+
+        &__circle2 {
+            width: 30px;
+            height: 25px;
+            margin: 10px 0px 0px 130px;
+
+        }
+
+        &__say {
+            width: 280px;
+            height: 150px;
+            font-size: 16px;
+            margin: 0px 0px 0px 0px;
+            padding: 30px;
+        }
+    }
+
+    @media (max-width: $media-s) {
+        &__body {
+            width: 100%;
+            margin: 30px 0px 45px 0px;
+        }
+        &__say {
+            width: 250px;
+            height: 150px;
+            font-size: 16px;
+            margin: 0px 0px 0px 0px;
+            padding: 30px;
+        }
+    }
+}

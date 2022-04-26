@@ -1,0 +1,87 @@
+@import '../base/variables';
+
+.footer {
+    height: 150px;
+    // background-color: $third;
+    background-color: #848484;
+    color: $secondary;
+    text-align: center;
+    font-family: 'Exo 2', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    &__contact{
+        width: 550px;
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__contact a{
+        text-decoration: none;
+        font-size: 30px;
+        color: white;
+        transition: all 0.3s ease;
+    }
+    &__contact a:hover{
+        color: $five;
+    }
+    .tree a{
+        font-size: 50px;
+        color: rgb(11, 61, 11);
+    }
+    .tree a:hover{
+        font-size: 50px;
+        color: rgb(25, 90, 65);
+    }
+    &__bear img{
+        width: 70px;
+        height: 70px;
+    }
+   
+   
+    @media (max-width: $media-md) {
+        height: 125px;
+        &__contact{
+            width: 400px;
+            height: 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &__contact a{
+            text-decoration: none;
+            font-size: 25px;
+            color: white;
+            transition: all 0.3s ease;
+        }
+    }
+    @media (max-width: $media-sm) {
+        height: 125px;
+        &__contact{
+            width: 280px;
+            height: 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &__contact a{
+            text-decoration: none;
+            font-size: 18px;
+            color: white;
+            transition: all 0.3s ease;
+        }
+        .tree{
+            font-size: 30px;
+            color: rgb(11, 61, 11);
+        }
+    }
+    @media (max-width: $media-s){
+        height: 120px;
+        &__contact{
+            width: 260px;
+        }
+    }
+    
+}

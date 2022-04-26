@@ -1,0 +1,135 @@
+@import '../base/variables';
+@import '../base/mixins';
+
+
+
+
+
+.dsp {
+    font-family: 'Exo 2', sans-serif;
+    background-color: #ffffff;
+   
+    &__body {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        background-color: #f2f2f2;
+    }
+    &__body:first-child{
+        margin-top: 30px;
+    }
+
+    &__item img {
+        width: 400px;
+        height: 400px;
+        object-fit: fill;
+        margin-top: 50px;
+        box-shadow: 10px 10px 44px -10px $secondary;
+    }
+
+    &__item .descr {
+        text-align: center;
+        font-size: 20px;
+        color: rgb(49, 48, 48);
+        font-weight: bold;
+    }
+
+    &__last:last-child {
+        margin-bottom: 50px;
+        padding-bottom: 50px;
+    }
+    @media (max-width: $media-lg){
+        &__body:first-child{
+            margin-top: 20px;
+        }
+    }
+
+    @media (max-width: $media-lg){
+        &__last:last-child {
+            margin-bottom: 30px;
+            padding-bottom: 40px;
+        }
+    }
+
+    @media (max-width: $media-md) {
+        &__category-title {
+            height: 100px;
+            font-size: 14px;
+            padding-bottom: 5px;
+        }
+
+        &__item img {
+            width: 400px;
+            height: 350px;
+            margin-top: 30px;
+        }
+        &__last:last-child {
+            margin-bottom: 30px;
+            padding-bottom: 40px;
+        }
+
+    }
+
+    @media (max-width: $media-sm) {
+
+        &__body {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &__category-title {
+            height: 90px;
+            font-size: 12px;
+            padding-bottom: 5px;
+        }
+
+        &__item img {
+            width: 275px;
+            height: 250px;
+            margin-top: 20px;
+        }
+
+        &__item .descr {
+            text-align: center;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        &__last:last-child {
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+        }
+
+      
+    }
+    @media (max-width: $media-s) {
+
+        &__category-title {
+            height: 90px;
+            font-size: 10px;
+            padding-bottom: 5px;
+        }
+
+        &__item img {
+            width: 250px;
+            height: 225px;
+            margin-top: 10px;
+        }
+
+        &__item .descr {
+            text-align: center;
+            font-size: 14px;
+            font-weight: bold;
+        }
+      
+
+    }
+
+
+
+
+
+
+}
